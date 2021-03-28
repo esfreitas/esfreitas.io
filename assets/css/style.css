@@ -34,6 +34,14 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul,li,
     flex-basis: 49%;
 }
 
+:root{
+    --corBackgroundPrimaria: #45dbfc;
+    --corBackgroundSecundaria: #04133d;
+    --corBackgroundDark: #0e0e0e;
+    --corTextoPrimaria: #636363;
+    --corTextoSecundaria: #000;
+}
+
 
 .hidden{
     display: none;
@@ -46,7 +54,7 @@ body{
 
 /*HEADER*/
 header{
-    background-color: #45dbfc;
+    background-color: var(--corBackgroundPrimaria);
     padding: 30px 30px 0;
 }
 header .container{
@@ -69,10 +77,11 @@ header .coluna img{
 }
 header .coluna h1{
     font-size: 1.5rem;
+    color:var(--corTextoSecundaria);
 }
 header .coluna p{
     font-size: 1rem;
-    color: #636363;
+    color: var(--corTextoPrimaria);
 }
 header .coluna ul{
     margin: 16px 0 0;
@@ -82,14 +91,14 @@ header .coluna ul li{
 }
 header .coluna ul li a{
     font-size: 1rem;
-    color: black;
+    color:var(--corTextoSecundaria);
 }
 
 
 
 /*FOOTER*/
 footer{
-    background-color: #04133d;
+    background-color:var(--corBackgroundSecundaria);
 }
 
 footer .container{
@@ -124,6 +133,7 @@ main .coluna section{
     border-bottom: 1px solid #d4e9ff;
     margin: 0 0 20px;
     min-height: 187px;
+    color:var(--corTextoSecundaria);
 }
 main .coluna section h2{
     font-size: 1.3rem;
@@ -131,7 +141,7 @@ main .coluna section h2{
 }
 main .coluna section p{
     font-size: 0.9rem;
-    color: #636363;
+    color: var(--corTextoPrimaria);
     line-height: 1.5;
 }
 
@@ -149,6 +159,34 @@ main .coluna section ul li strong{
 }
 
 /*EXTRAS*/
+.ativar-dark{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+label{
+    border: solid 2px red;
+}
+
+.ativar-dark:checked ~ .dark-mode{
+    --corBackgroundPrimaria: #000;
+    --corBackgroundSecundaria: #000;
+    --corTextoPrimaria: #fff;
+    --corTextoSecundaria: #fff;
+}
+
+.ativar-dark:checked ~ .dark-mode header .container{
+    background-color: var(--corBackgroundDark);
+}
+
+.ativar-dark:checked ~ .dark-mode .container{
+    background-color: var(--corBackgroundDark);
+}
+
+.ativar-dark:checked ~ .dark-mode main{
+    background-color: var(--corBackgroundSecundaria);
+}
 
 /*@MEDIA*/
 @media only screen and (min-width: 768px){
