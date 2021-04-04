@@ -103,7 +103,7 @@ footer{
 }
 
 footer .container{
-    padding: 20px;
+    padding: 30px;
 }
 
 footer nav ul li a{
@@ -133,7 +133,7 @@ footer nav .redes-sociais li a:hover img{
 /*PAGINA INICIAL*/
 
 main .coluna{
-    padding: 20px;
+    padding: 30px;
 }
 main .coluna section{
     border-bottom: 1px solid var(--corBordaSection);
