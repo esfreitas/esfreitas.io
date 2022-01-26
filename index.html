@@ -117,7 +117,26 @@
                                     <li>
                                        <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
                                        </script>
-                                       <script>
+                                        
+                                        <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+                                            </script>
+                                            <script>
+                                                (function () {
+                                                    window.onload = function () {
+                                                        new BlipChat()
+                                                        .withAppKey('bXVuZG9pbmZhbnRpbHNpdGVwcmQ6NWFjMjlhNzItOGRhNS00NmZhLTg5MWYtMGMwMGI2MDQwNzIx')
+                                                        .withButton({"color":"#2CC3D5","icon":""})
+                                                        .withCustomCommonUrl('https://mundoinfantilstore.chat.blip.ai/')
+                                                        .withAccount({
+                                                            extras:{
+                                                                pgJuvenil: ('True')
+                                                            }
+                                                        })
+                                                        .build();
+                                                    }
+                                                })();
+                                            </script>
+                                          <!-- <script>
                                           
                                             (function () {
                                                 window.onload = function () {
@@ -129,7 +148,7 @@
                                                 }
                                             })();
                                             
-                                       </script>
+                                       </script> -->
                                             
                                     </li>
                                 </ul>
