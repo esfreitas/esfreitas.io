@@ -147,12 +147,12 @@
                                         <script>
                                             (function () {
                                                 window.onload = function () {
-                                                   let client = new BlipChat()
+                                                    let chat = new BlipChat()
                                                     .withAppKey('Y2VsaXJvdXRlcmhtZzo1YWQ0Mjk1Mi0xNGJhLTRkMmYtOGYzMS1jNTYyYTkyYmM4M2U=')
                                                     .withButton({"color":"#2CC3D5","icon":"https://blipmediastore.blob.core.windows.net/public-medias/Media_023b22c2-8204-4d3f-a674-bbc7d1d2160c"})
                                                     .withCustomCommonUrl('https://celi.chat.blip.ai/')
-                                                    .build();
-                                                    setTimeout(client.toogleChat(), 5000);
+                                                    chat.build();
+                                                    setTimeout(chat.toogleChat(), 3000);
                                                 }
                                             })();
                                         </script>
